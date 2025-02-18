@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'ambulance-ufe',
+  globalScript: 'src/global/app.ts',
   outputTargets: [
     {
       type: 'dist',
@@ -22,5 +23,6 @@ export const config: Config = {
   ],
   testing: {
     browserHeadless: "shell",
+    browserExecutablePath: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
   },
 };
